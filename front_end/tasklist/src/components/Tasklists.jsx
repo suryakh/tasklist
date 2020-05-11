@@ -15,7 +15,7 @@ export class Tasklists extends Component {
     componentDidMount() {
         axios({
             method: "GET",
-            url: 'http://localhost:5000/tlist/gettlists',
+            url: 'https://tasklistflask.herokuapp.com/tlist/gettlists',
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -42,7 +42,7 @@ export class Tasklists extends Component {
         })
         axios({
             method: "POST",
-            url: "http://localhost:5000/tlist/createtlist",
+            url: "https://tasklistflask.herokuapp.com/tlist/createtlist",
             data: { "title": this.state.title },
             headers: {
                 'Authorization': this.props.value.token
@@ -51,7 +51,7 @@ export class Tasklists extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: 'http://localhost:5000/tlist/gettlists',
+                    url: 'https://tasklistflask.herokuapp.com/tlist/gettlists',
                     headers: {
                         'Authorization': this.props.value.token
                     }

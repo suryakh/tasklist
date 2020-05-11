@@ -18,7 +18,7 @@ export class Tasks extends Component {
     componentDidMount() {
         axios({
             method: "GET",
-            url: `http://localhost:5000/tlist/singletasklist/${this.props.match.params.id}`,
+            url: `https://tasklistflask.herokuapp.com/tlist/singletasklist/${this.props.match.params.id}`,
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -33,7 +33,7 @@ export class Tasks extends Component {
             })
         axios({
             method: "GET",
-            url: `http://localhost:5000/task/gettasks/${this.props.match.params.id}`,
+            url: `https://tasklistflask.herokuapp.com/task/gettasks/${this.props.match.params.id}`,
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -62,7 +62,7 @@ export class Tasks extends Component {
 
         axios({
             method: "POST",
-            url: `http://localhost:5000/task/addtask/${this.props.match.params.id}`,
+            url: `https://tasklistflask.herokuapp.com/task/addtask/${this.props.match.params.id}`,
             data: {
                 content: this.state.content
             },
@@ -73,7 +73,7 @@ export class Tasks extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: `http://localhost:5000/task/gettasks/${this.props.match.params.id}`,
+                    url: `https://tasklistflask.herokuapp.com/task/gettasks/${this.props.match.params.id}`,
                     headers: {
                         'Authorization': this.props.value.token
                     }
@@ -118,7 +118,7 @@ export class Tasks extends Component {
         })
         axios({
             method: "GET",
-            url: `http://localhost:5000/task/getsingletask/${id}`,
+            url: `https://tasklistflask.herokuapp.com/task/getsingletask/${id}`,
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -142,7 +142,7 @@ export class Tasks extends Component {
         })
         axios({
             method: "DELETE",
-            url: `http://localhost:5000/task/getsingletask/${id}`,
+            url: `https://tasklistflask.herokuapp.com/task/getsingletask/${id}`,
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -150,7 +150,7 @@ export class Tasks extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: `http://localhost:5000/task/gettasks/${this.props.match.params.id}`,
+                    url: `https://tasklistflask.herokuapp.com/task/gettasks/${this.props.match.params.id}`,
                     headers: {
                         'Authorization': this.props.value.token
                     }
@@ -173,7 +173,7 @@ export class Tasks extends Component {
     updatetask = () => {
         axios({
             method: "POST",
-            url: `http://localhost:5000/task/getsingletask/${this.state.taskid}`,
+            url: `https://tasklistflask.herokuapp.com/task/getsingletask/${this.state.taskid}`,
             data: { 'content': this.state.content },
             headers: {
                 'Authorization': this.props.value.token
@@ -182,7 +182,7 @@ export class Tasks extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: `http://localhost:5000/task/gettasks/${this.props.match.params.id}`,
+                    url: `https://tasklistflask.herokuapp.com/task/gettasks/${this.props.match.params.id}`,
                     headers: {
                         'Authorization': this.props.value.token
                     }
@@ -215,7 +215,7 @@ export class Tasks extends Component {
         })
         axios({
             method: "GET",
-            url: `http://localhost:5000/tlist/singletasklist/${this.props.match.params.id}`,
+            url: `https://tasklistflask.herokuapp.com/tlist/singletasklist/${this.props.match.params.id}`,
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -235,7 +235,7 @@ export class Tasks extends Component {
     edittitle = () => {
         axios({
             method: "POST",
-            url: `http://localhost:5000/tlist/singletasklist/${this.props.match.params.id}`,
+            url: `https://tasklistflask.herokuapp.com/tlist/singletasklist/${this.props.match.params.id}`,
             data: {
                 "content": this.state.content
             },
@@ -246,7 +246,7 @@ export class Tasks extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: `http://localhost:5000/tlist/singletasklist/${this.props.match.params.id}`,
+                    url: `https://tasklistflask.herokuapp.com/tlist/singletasklist/${this.props.match.params.id}`,
                     headers: {
                         'Authorization': this.props.value.token
                     }
@@ -273,7 +273,7 @@ export class Tasks extends Component {
         window.confirm("Are you sure you wish to clear the page?") &&
             axios({
                 method: "DELETE",
-                url: `http://localhost:5000/tlist/singletasklist/${this.props.match.params.id}`,
+                url: `https://tasklistflask.herokuapp.com/tlist/singletasklist/${this.props.match.params.id}`,
                 headers: {
                     'Authorization': this.props.value.token
                 }

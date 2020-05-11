@@ -23,7 +23,7 @@ export class Login extends Component {
         }
         axios({
             method: "POST",
-            url: "http://localhost:5000/auth/login",
+            url: "https://tasklistflask.herokuapp.com//auth/login",
             data: temp
         })
             .then((res) => {

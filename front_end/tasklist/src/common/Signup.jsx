@@ -21,7 +21,7 @@ export class Signup extends Component {
         if (this.state.username != "" && this.state.password != "" && this.state.email){
         axios({
             method:"POST",
-            url:"http://localhost:5000/auth/signup",
+            url:"https://tasklistflask.herokuapp.com/auth/signup",
             data:{
                 username:this.state.username,
                 email:this.state.email,
