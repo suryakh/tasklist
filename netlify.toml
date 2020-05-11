@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish="front_end/tasklist/build"
+  base = "front_end/tasklist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
