@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish="front_end/tasklist/build"
+  publish="front_end/tasklist"
   base = "front_end/tasklist"
 
 [[redirects]]
