@@ -17,27 +17,27 @@ Screen Shots:
 
 Login Page:
 
-![signup]()
+![Login](https://github.com/suryakh/tasklist/blob/master/ScreenShots/Login.png)
 
 Signup Page:
 
-![signUp]()
+![signUp](https://github.com/suryakh/tasklist/blob/master/ScreenShots/Signup.png)
 
-AddTask :
+Tasklist Page:
 
-![addTask]()
-
-Tasks:
-
-![Tasklist]()
+![Tasklist](https://github.com/suryakh/tasklist/blob/master/ScreenShots/taskList.png)
 
 Creating Tasklist:
 
-![creating Tasklist]()
+![creating Tasklist](https://github.com/suryakh/tasklist/blob/master/ScreenShots/creatingTaskList.png)
 
-UserProfilePage:
+AddTask :
 
-![userprofile]()
+![addTask](https://github.com/suryakh/tasklist/blob/master/ScreenShots/addingTasks.png)
+
+Tasks:
+
+![userprofile](https://github.com/suryakh/tasklist/blob/master/ScreenShots/userProfile.png)
 
 
 
