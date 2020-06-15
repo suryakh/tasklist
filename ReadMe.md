@@ -35,7 +35,7 @@ AddTask :
 
 ![addTask](https://github.com/suryakh/tasklist/blob/master/ScreenShots/addingTasks.png)
 
-Tasks:
+User profile page:
 
 ![userprofile](https://github.com/suryakh/tasklist/blob/master/ScreenShots/userProfile.png)
 
