@@ -15,7 +15,7 @@ export class Userprofie extends Component {
     componentDidMount() {
         axios({
             method: "GET",
-            url: 'http://localhost:5000/profile/user',
+            url: 'https://tasklistflask.herokuapp.com/profile/user',
             headers: {
                 'Authorization': this.props.value.token
             }
@@ -37,7 +37,7 @@ export class Userprofie extends Component {
         formdata.append("image", this.state.image)
         axios({
             method: "POST",
-            url: 'http://localhost:5000/profile/image',
+            url: 'https://tasklistflask.herokuapp.com/profile/image',
             headers: {
                 'Authorization': this.props.value.token
             },
@@ -46,7 +46,7 @@ export class Userprofie extends Component {
             .then((res) => {
                 axios({
                     method: "GET",
-                    url: 'http://localhost:5000/profile/user',
+                    url: 'https://tasklistflask.herokuapp.com/profile/user',
                     headers: {
                         'Authorization': this.props.value.token
                     }
@@ -65,7 +65,7 @@ export class Userprofie extends Component {
             <div className="container">
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 d-flex justify-content-center">
-                        <img className="img-fluid" src={`http://localhost:5000/static/${this.state.profile}`} />
+                        <img className="img-fluid" src={`https://tasklistflask.herokuapp.com/static/${this.state.profile}`} />
                     </div>
                     <div>
 

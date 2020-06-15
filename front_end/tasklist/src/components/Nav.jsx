@@ -22,7 +22,7 @@ export class Nav extends Component {
                     <div className="col-lg-3 col-xl-3 col-sm-6 col-md-6">
                         <div className="row d-flex justify-content-end">
                             <div className="col-4">
-                                {this.props.value.login && <Link className="text-white" to="/userprofile"><div className="row"><div className="col-4 bg-white rounded-circle d-flex justify-content-center"><img className="img-fluid" src={`http://localhost:5000/static/${this.props.value.image}`} /></div> <div className="col-6"><h3>{this.props.value.user}</h3></div></div></Link>}
+                                {this.props.value.login && <Link className="text-white" to="/userprofile"><div className="row"><div className="col-4 bg-white rounded-circle d-flex justify-content-center"><img className="img-fluid" src={`https://tasklistflask.herokuapp.com/static/${this.props.value.image}`} /></div> <div className="col-6"><h3>{this.props.value.user}</h3></div></div></Link>}
                             </div>
                             {this.props.value.login && <div className="col-4">
                                 <Link className="text-white" to="/tlists"><button className="btn btn-primary">My Tasklists</button></Link>
